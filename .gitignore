@@ -1,0 +1,15 @@
+# Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
