@@ -32,3 +32,22 @@ git clone https://github.com/SonLetGo/MountinComplex.git
 ```shell
 Вкладка Git -> Получить
 ```
+
+
+# Как импортировать БД
+
+Скачиваем файлик moutin_complex_backup.sql и находим где у нас Postgres обычно отн установлен в C:\Program Files\PostgreSQL\16\bin
+
+Открываем cmd и вводим:
+
+```shell
+cd  C:\Program Files\PostgreSQL\16\bin
+```
+создаем пустую бд в pgAdmin. Надеюсь справитесь без подсказок.
+
+и импортируем в Postgres:
+```shell
+pg_restore.exe --username "postgres" --dbname "mountin_complex" --verbose "<путь до moutin_complex_backup.sql>"
+```
+
+После проверям что все импортировалось
